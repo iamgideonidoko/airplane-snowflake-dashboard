@@ -1,12 +1,8 @@
-import { Stack, Table, Text, Title, useComponentState, Chart } from "@airplane/views";
+import { Stack, Table, Text, Title, Chart } from "@airplane/views";
 import airplane from "airplane";
 
 const ClientDashboard = () => {
-  const customersState = useComponentState();
-  // const selectedCustomer = customersState.selectedRow;
-  console.log('trying to log somethings');
   const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
   return (
     <Stack>
       <Title>Client Snowflake Dashboard</Title>
