@@ -33,7 +33,7 @@ const ClientDashboard = () => {
           task="count_subs_by_month"
           outputTransform={(data) => ({ 
             months, 
-            Client_Subscriptions: months.map((month) => data?.Q1?.[0]?.[month.toUpperCase()]) 
+            Client_Subscriptions: months.map((month) => data?.Q1?.[0]?.[`'${month.substring(0, 3)}'`]) 
           })}
         />
     </Stack>
